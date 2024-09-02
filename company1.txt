@@ -1,0 +1,25 @@
+CSS :
+===================
+1. Media Query in css. how to resize area according to difference resolution of the devices.
+2. Difference between display none vs visibility hidden.
+
+HTML :
+===================
+1. symentic tags in HTML. how amy tags are there?
+2. what is span tag and why we use it?
+3. what are the block element and inline element?
+
+javascript :
+===================
+1. what is the promises? write a program of the promises.
+2. arrow function?
+3. call , apply and bind. When we use it?
+4. Event loop ?
+5. callback and callback hell?
+6. event bubbling and event capturing?
+
+React.js :
+===================
+1. What is use of ref key ?
+2. What is difference between class component and functional component?
+3. Write a code for conditional component showing.
