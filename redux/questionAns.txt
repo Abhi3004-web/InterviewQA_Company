@@ -1,0 +1,143 @@
+Basic Redux Concepts
+What is Redux?
+
+Redux is a state management library for JavaScript applications. It provides a predictable state container to manage application state in a consistent manner.
+What are the three core principles of Redux?
+
+Single Source of Truth: The state of the application is stored in a single store.
+State is Read-Only: The state can only be changed by dispatching actions.
+Changes are Made with Pure Functions: Changes to the state are made through pure functions called reducers.
+What is a store in Redux?
+
+The store is a centralized place that holds the application's state. It provides methods to get the state, dispatch actions, and subscribe to state changes.
+What is an action in Redux?
+
+An action is a plain JavaScript object that describes a change or event that has occurred. It must have a type property and can include additional data.
+What is a reducer?
+
+A reducer is a pure function that takes the current state and an action, and returns a new state. It describes how the application's state changes in response to actions.
+What is middleware in Redux?
+
+Middleware provides a way to extend Redux's capabilities. It can be used for logging, crash reporting, asynchronous actions, and more.
+What is the purpose of the dispatch function?
+
+The dispatch function sends an action to the store to update the state.
+How does Redux handle asynchronous actions?
+
+Redux itself does not handle asynchronous actions, but middleware like redux-thunk or redux-saga can be used to manage asynchronous operations.
+What is redux-thunk?
+
+redux-thunk is a middleware that allows action creators to return functions instead of plain objects, enabling the dispatch of asynchronous actions.
+What is redux-saga?
+
+redux-saga is a middleware that uses sagas (generator functions) to handle side effects and asynchronous actions in a more declarative way.
+Advanced Redux Concepts
+What is the purpose of the combineReducers function?
+
+combineReducers combines multiple reducers into a single reducer function, which helps to manage different parts of the state in a modular way.
+How does Redux Toolkit simplify Redux development?
+
+Redux Toolkit provides utilities to simplify Redux setup, including createSlice, configureStore, and built-in middleware like redux-thunk.
+What is createSlice in Redux Toolkit?
+
+createSlice is a function that automatically generates action creators and reducers based on a given slice of the state.
+What does configureStore do in Redux Toolkit?
+
+configureStore is a function that sets up the Redux store with sensible defaults and includes built-in support for Redux DevTools and middleware.
+How do you create a Redux store using Redux Toolkit?
+
+Use the configureStore function from Redux Toolkit, passing in the reducers and any middleware you want to include.
+What are selectors in Redux?
+
+Selectors are functions that extract and derive data from the Redux store. They can be used to access specific parts of the state.
+How does createAsyncThunk work in Redux Toolkit?
+
+createAsyncThunk is a function that simplifies the process of handling asynchronous actions by automatically generating pending, fulfilled, and rejected action types.
+What is the purpose of createEntityAdapter in Redux Toolkit?
+
+createEntityAdapter provides a set of functions to manage normalized state and reduce boilerplate code when dealing with collections of data.
+What is the difference between reducer and reducer in Redux Toolkit?
+
+In Redux Toolkit, the reducer refers to a function defined in createSlice that handles state changes, while the plain reducer in traditional Redux is a function that handles actions and returns new state.
+How do you handle form state in Redux?
+
+Form state can be managed in Redux using libraries like redux-form or by managing form data manually in the Redux store.
+Performance and Optimization
+How do you optimize Redux performance?
+
+Use memoization with selectors, avoid unnecessary re-renders by using React.memo or PureComponent, and split reducers to manage different parts of the state efficiently.
+What is reselect and how does it help with performance?
+
+reselect is a library for creating memoized selectors, which helps to avoid unnecessary recalculations and re-renders by caching the results of selector functions.
+What are the benefits of using Immer with Redux Toolkit?
+
+Immer allows you to write immutable update logic in a more intuitive way by handling immutability under the hood, making it easier to update state.
+How do you handle large datasets in Redux?
+
+Use normalization techniques to store data efficiently and use selectors to access and manipulate specific subsets of data.
+What is the batch function from react-redux and when would you use it?
+
+The batch function allows you to group multiple state updates into a single re-render, improving performance by reducing the number of re-renders.
+Common Pitfalls and Debugging
+What are some common mistakes when using Redux?
+
+Common mistakes include mutating state directly, not handling actions properly, and overusing global state when local state would suffice.
+How do you debug Redux applications?
+
+Use Redux DevTools Extension to inspect state changes and actions. You can also log actions and state changes manually for debugging purposes.
+What are the benefits of using Redux DevTools?
+
+Redux DevTools allows you to inspect actions, state changes, and time-travel debug, making it easier to track down issues and understand application flow.
+How can you prevent unnecessary re-renders in a React-Redux application?
+
+Use React.memo, PureComponent, and useSelector with proper selector functions to avoid unnecessary re-renders.
+What is the purpose of reducer functions in Redux?
+
+Reducer functions handle state changes in response to actions. They return a new state based on the action type and payload.
+Practical Use Cases
+How do you handle authentication in a Redux application?
+
+Store authentication tokens and user information in the Redux store, and manage authentication state through actions and reducers.
+How would you structure a large Redux application?
+
+Use feature-based folder structures, split reducers by domain, and organize actions and selectors for each feature to maintain modularity and scalability.
+What is the role of createReducer in Redux Toolkit?
+
+createReducer is a utility function that simplifies the creation of reducers by handling action type mappings and immutable updates.
+How do you handle global and local state in a React application with Redux?
+
+Use Redux for global state management and useState or useReducer for local component state.
+What is the difference between useDispatch and dispatch in Redux?
+
+useDispatch is a React-Redux hook that returns the dispatch function, while dispatch is a method available on the Redux store for dispatching actions.
+Integration and Best Practices
+How do you integrate Redux with React?
+
+Use the Provider component from react-redux to pass the Redux store to your React application, and use useSelector and useDispatch hooks or connect to interact with the store.
+What is the connect function in React-Redux?
+
+connect is a higher-order component that connects a React component to the Redux store, allowing it to receive state and dispatch actions as props.
+When would you use Redux Toolkit’s createAsyncThunk vs. handling async logic manually?
+
+Use createAsyncThunk for common async patterns and boilerplate reduction, while manual handling may be needed for more complex or custom async scenarios.
+How do you manage global state changes across different components?
+
+Use Redux to manage global state, and connect components to the store using useSelector and useDispatch to access and update state as needed.
+What are some best practices for using Redux in a React application?
+
+Keep the state normalized, use selectors for data retrieval, avoid mutating state directly, and keep actions and reducers organized by feature.
+Redux Toolkit Features
+What are immer’s role and benefits in Redux Toolkit?
+
+Immer allows for writing mutable update logic that gets converted into immutable updates, simplifying state management and reducing boilerplate.
+How do you use createSlice to manage multiple reducers?
+
+Define a slice with createSlice, where each case reducer function handles a specific action type, and combine multiple slices into the store.
+What is the purpose of extraReducers in createSlice?
+
+extraReducers allows handling actions defined outside of the slice, such as those created with createAsyncThunk.
+How does Redux Toolkit support TypeScript?
+
+Redux Toolkit provides TypeScript types and utility functions, such as createSlice and configureStore, with built
+
+

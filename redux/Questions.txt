@@ -1,0 +1,22 @@
+1. What is Redux, and why is it commonly used in React applications?
+2. Can you explain the core principles of Redux, including Actions, Reducers, and the Store?
+3. What is the Redux Store, and how does it differ from React component state?
+4. How does data flow through a Redux application from start to finish?
+5. Why is immutability crucial in Redux, and how is it maintained?
+6. What are Redux Actions and Action Creators? How do they interact?
+7. What role do Reducers play in Redux, and how do they work?
+8. What is a Redux Selector, and when should you use it?
+9. How do Redux Thunk and Redux Saga differ in handling asynchronous actions?
+10. What is Redux Middleware, and what are some examples of commonly used middlewares?
+11. How does a middleware like redux-thunk enhance Redux functionality?
+12. How does middleware process actions in the Redux flow?
+13. What are the main features of Redux Toolkit, and how does it improve the Redux experience?
+14. What are 'slices' in Redux Toolkit, and why are they important?
+15. Why might developers prefer Redux Toolkit over traditional Redux?
+16. What are the advantages of using createSlice() in Redux Toolkit?
+17. How does Redux Toolkit simplify the Redux setup process compared to traditional Redux?
+18. What is Redux state normalization, and why is it beneficial?
+19. How does time-travel debugging work with Redux DevTools?
+20. What role does memoization play in Redux selectors for optimizing performance?
+21. What are the potential downsides of using Redux in small to medium-sized applications?
+22. How do action creators differ from action types in Redux?
